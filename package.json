@@ -36,7 +36,7 @@
 		"bin.js"
 	],
 	"scripts": {
-		"build": "npm i && tsc",
+		"build": "npm i -g typescript && npm i && tsc",
 		"start": "npx bare-server-node"
 	},
 	"dependencies": {
@@ -59,7 +59,7 @@
 		"@typescript-eslint/parser": "^5.59.7",
 		"eslint": "^8.41.0",
 		"prettier": "^2.8.8",
-		"typescript": "^5.0.4",
+		"typescript": "^5.3.3",
 		"undici": "^5.22.1"
 	}
 }
