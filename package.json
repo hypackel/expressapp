@@ -36,8 +36,8 @@
 		"bin.js"
 	],
 	"scripts": {
-		"build": "npm i typescript && npm i bare-server-node && tsc",
-		"star": "npx bare-server-node"
+		"build": "npm i && tsc",
+		"start": "npx bare-server-node"
 	},
 	"dependencies": {
 		"async-exit-hook": "^2.0.1",
