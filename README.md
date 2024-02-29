@@ -1,45 +1,41 @@
-# node-js-getting-started
+# TOMP Bare Server
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+This repository implements the TompHTTP bare server. See the specification [here](https://github.com/tomphttp/specifications/blob/master/BareServer.md).
 
-This application supports the [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+## Upgrading
 
-## Running Locally
+A guide for updating from v1 to v2 can be found [here](./docs/V2-UPGRADE-GUIDE.md).
 
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku CLI](https://cli.heroku.com/) installed.
+## Usage
+
+We provide a command-line interface for creating a server.
+
+For more features, specify the `--help` option when running the CLI.
+
+## Quickstart
+
+1. Install Bare Server Node globally
 
 ```sh
-$ git clone https://github.com/heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
+npm install --global @tomphttp/bare-server-node
 ```
 
-Your app should now be running on [localhost:5001](http://localhost:5001/).
+2. Start the server
 
-## Deploying to Heroku
-
-Using resources for this example app counts towards your usage. [Delete your app](https://devcenter.heroku.com/articles/heroku-cli-commands#heroku-apps-destroy) and [database](https://devcenter.heroku.com/articles/heroku-postgresql#removing-the-add-on) as soon as you are done experimenting to control costs.
-
-By default, apps use Eco dynos if you are subscribed to Eco. Otherwise, it defaults to Basic dynos. The Eco dynos plan is shared across all Eco dynos in your account and is recommended if you plan on deploying many small apps to Heroku. Learn more about our low-cost plans [here](https://blog.heroku.com/new-low-cost-plans).
-
-Eligible students can apply for platform credits through our new [Heroku for GitHub Students program](https://blog.heroku.com/github-student-developer-program).
-
+```sh
+npx bare-server-node
 ```
-$ heroku create
-$ git push heroku main
-$ heroku open
+
+Optionally start the server localhost:8080:
+
+```sh
+npx bare-server-node --port 8080 --host localhost
 ```
-or
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+## Programically create a bare server
 
-## Documentation
+See [examples/](https://github.com/tomphttp/bare-server-node/tree/master/examples).
 
-For more information about using Node.js on Heroku, see these Dev Center articles:
+## Development
 
-- [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+See the [wiki](https://github.com/tomphttp/bare-server-node/wiki).
