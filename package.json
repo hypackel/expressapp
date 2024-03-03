@@ -1,26 +1,8 @@
 {
-	"name": "@tomphttp/bare-server-node",
-	"description": "The Bare Server implementation in NodeJS.",
+	"name": "cobb",
+	"description": "bob.",
 	"version": "2.0.1",
-	"homepage": "https://github.com/tomphttp",
-	"bugs": {
-		"url": "https://github.com/tomphttp/bare-server-node/issues",
-		"email": "tomp@sys32.dev"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/tomphttp/bare-server-node.git"
-	},
-	"author": {
-		"name": "TOMP Development",
-		"email": "tomp@sys32.dev",
-		"url": "https://github.com/tomphttp"
-	},
-	"keywords": [
-		"proxy",
-		"tomp",
-		"tomphttp"
-	],
+
 	"license": "GPL-3.0",
 	"type": "commonjs",
 	"engines": {
