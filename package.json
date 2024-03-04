@@ -2,7 +2,6 @@
 	"name": "cobb",
 	"description": "bob.",
 	"version": "2.0.1",
-
 	"license": "GPL-3.0",
 	"type": "commonjs",
 	"engines": {
@@ -24,6 +23,7 @@
 	"dependencies": {
 		"async-exit-hook": "^2.0.1",
 		"commander": "^10.0.1",
+		"cors": "^2.8.5",
 		"dotenv": "^16.0.3",
 		"http-errors": "^2.0.0",
 		"ipaddr.js": "^2.0.1",
